@@ -23,7 +23,7 @@ python textToQr.py
 ```
 Input text: Hello World
 ```
-- will display this image 
+- will display the input encoded into this QR image
 
 ![image](https://github.com/user-attachments/assets/8f1199a4-71a3-4875-b6eb-4f7fbf2ab6b1)
 
