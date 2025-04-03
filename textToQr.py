@@ -12,8 +12,14 @@ qr = qrcode.QRCode(
     border=4, #border thickness
     )
 
+#add input text to QR code
+qr.add_data(input)
+qr.make(fit=True)
 
-image = Image.open("image.jpg")
+#create image of QR
+image = qr.make_image(fill="black", back_color="white")
+#image.save("image.jpg")
+#image = Image.open("image.jpg")
 
 plt.imshow(image)
 plt.axis('off')
